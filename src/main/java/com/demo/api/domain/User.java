@@ -9,9 +9,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
 
 @Entity // Marca uma classe como representando uma tabela do banco
+@Table(name = "tb_user")
 public class User implements Serializable{ // Trafegar em rede 
 
     private static final long serialVersionUID = 1L;
@@ -67,11 +69,11 @@ public class User implements Serializable{ // Trafegar em rede
 		this.login = login;
 	}
 
-	public String getPassoword() {
+	public String getPassword() {
 		return password;
 	}
 
-	public void setPassoword(String password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
 
