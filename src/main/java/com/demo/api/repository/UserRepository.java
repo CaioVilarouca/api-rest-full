@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import com.demo.api.domain.User;
 
-@Repository // Marca uma interface como acesso a dados
+@Repository // Uma interface para acessar o banco de dados
 public interface UserRepository extends JpaRepository<User, Integer>{
-
 }
